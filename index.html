@@ -15,7 +15,10 @@
     <!--
     <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
     -->
+    <a href="#main-stuff" class="visually-hidden" aria-label="Skip to main content">Skip to main content</a>
+    <a href="#footer-content" class="visually-hidden" aria-label="Skip to footer">Skip to footer</a>
     <header class="header">
+
         <div class="container">
             <!--
             <ul class="social-icons pt-3">
@@ -24,10 +27,11 @@
                 <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/heather_wiemelt/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="https://www.youtube.com/channel/UCCnxLcGvfu6tMHL2s9Rk5qQ/about" target="_blank"><i class="ti-youtube" aria-hidden="true"></i></a></li>            </ul>  -->
             <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">Heather Wiemelt</h1>
-                <h6 class="header-mono" >Frond End Designer | Developer</h6>
-            </div>
+                
+                <h4 class="header-subtitle" role="Introduction">Hello, I am</h4>
+                <h1 class="header-title" role="My name">Heather Wiemelt</h1>
+                <h6 class="header-mono" role="My Professional Title">Front End Designer | Developer</h6>
+            </div>      
         </div>
     </header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
@@ -38,52 +42,54 @@
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link" aria label="Start from the beginning">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#about" class="nav-link" aria label="Jump to About Section">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
+                        <a href="#resume" class="nav-link" aria label="Jump to Resume Section">Resume</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="assets/imgs/2025_avatar.jpeg" alt="" class="brand-img">
+                    <img src="assets/imgs/2025_avatar.jpeg" alt="Professional picture of me smiling in a blue ribbed cotton shirt" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Heather Wiemelt</h5>
-                        <div class="brand-subtitle">Web Designer | Developer</div>
+                        <div class="brand-subtitle" role="heading" >Web Designer | Developer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link" aria-label="Jump to Portfolio section">Portfolio</a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link" aria-label="Jump to Contact section">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <main id="main-stuff" tabindex="-1">
     <div class="container-fluid">
-        <div id="about" class="row about-section">
+        <div id="about" class="row about-section" aria label="About Me Section">
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
+                <span class="line mb-5" role="none"></span>
                 <h5 class="mb-3">A Web Designer / Developer with the desire to make the world a better place</h5>
                 <p class="mt-20">I am dedicated to creating immersive and user-friendly online experiences, seamlessly translating designs into functional websites. With expertise in HTML, CSS, and JavaScript, I prioritize staying current with emerging web technologies to help me conjure more innovative solutions for myself and my future clients.</p>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
+                <span class="line mb-5" role="none"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Email</span> : <a href="mailto:heatherwiemelt@gmail.com" target="_blank">heatherwiemelt@gmail.com</a></li>
-                    <li><span>Phone</span> : + <a href="tel:2242302029" target="_blank">(224) 230-2029</a></li>
-                    <li><span>Address</span> : <a href="https://maps.app.goo.gl/nnyWbCfY8fVdUDC7A" target="_blank">Elgin, IL.</a></li>
+                    <li><span>Email</span> : <a href="mailto:heatherwiemelt@gmail.com" target="_blank" aria label="Contact me through me e-mail">heatherwiemelt@gmail.com</a></li>
+                    <li><span>Phone</span> : + <a href="tel:2242302029" target="_blank" aria label="Call or text me through my cell">(224) 230-2029</a></li>
+                    <li><span>Address</span> : <a href="https://maps.app.goo.gl/nnyWbCfY8fVdUDC7A" target="_blank" aria label="See where I'm located">Elgin, IL.</a></li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/hwiemelt/" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/heather-wiemelt-1462287b/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/hwiemelt/" target="_blank"><i class="ti-facebook" aria-label="Follow me on facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/heather-wiemelt-1462287b/" target="_blank "><i class="ti-linkedin" aria-label="
+                        follow me on linkedin" aria-hidden="true"></i></a></li>
                    <!-- <li class="social-item"><a class="social-link" href="https://twitter.com/heatherwiemelt" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link" href="https://www.instagram.com/heather_wiemelt/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link" href="https://www.youtube.com/channel/UCCnxLcGvfu6tMHL2s9Rk5qQ/about" target="_blank"><i class="ti-youtube" aria-hidden="true"></i></a></li>
@@ -92,9 +98,9 @@
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
+                <span class="line mb-5" role="none"></span>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg" role="none"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Web Development</h6>
                         <p class="subtitle">Web Functionality, Responsiveness, Visual Content</p>
@@ -102,7 +108,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg" role="none"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>UI/UX</h6>
                         <p class="subtitle">A/B Testing, User Analysis, Interface Accessbility.</p>
@@ -110,7 +116,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg" role="none"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Digital Marketing</h6>
                         <p class="subtitle">Social Media, SEO, Photography, Advertising</p>
@@ -120,11 +126,12 @@
             </div>
         </div>
     </div>
+</main>
 
     <!--Resume Section-->
-    <section class="section" id="resume">
+    <section class="section" id="resume" aria label="Resume Section">
         <div class="container">
-            <h2 class="mb-5">My <span class="text-danger">Resume</span> <a href="HeatherWiemeltResume_2025.pdf" download="HeatherWiemeltResume_2025" target="_blank"><button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button></a></h2>
+            <h2 class="mb-5">My <span class="text-danger">Resume</span> <a href="HeatherWiemeltResume_2025.pdf" download="HeatherWiemeltResume_2025" target="_blank" aria label="Download my Resume in a new window"><button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button></a></h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
@@ -136,14 +143,14 @@
                         </div>
                         <div class="card-body">
                             <h6>2024 - Present</h6>
-                            <P class="title text-danger">Web Designer</br><small>Youtech</small></P>
+                            <P class="title text-danger" role="heading">Web Designer</br><small>Youtech</small></P>
                             
                             <p>Contribute to brainstorming and problem-solving sessions, providing creative input and technical expertise to help drive innovative solutions in a dynamic start-up culture</p>
                             <p>Manage multiple projects simultaneously, adhering to strict timelines while maintaining attention to detail and a high standard of quality work.</p>
                             
                             <hr>
                             <h6>2020 - 2024</h6>
-                            <P class="title text-danger">Web Production & Content Developer <br><small>Dealer Inspire/Cars Commerce</small> </P>
+                            <P class="title text-danger" role="heading">Web Production & Content Developer <br><small>Dealer Inspire/Cars Commerce</small> </P>
                             
                             <p>Co-building 2 to 3 Wordpress sites a week, totaling approximately 100 sites annually to intake a continuous flow of dealership demand</p>
                             <p>Outlined a quick and robust process for independent productivity using Salesforce dashboards to enhance efficiency for website creation</p>
@@ -182,12 +189,12 @@
                         </div>
                         <div class="card-body">
                             <h6>2018</h6>
-                            <P class="title text-danger">Bachelors of Science in Arts Technology</P>
+                            <P class="title text-danger" role="heading">Bachelors of Science in Arts Technology</P>
                             <P class="subtitle">Illinois State University</P>
                             <hr>
                             <h6>2015</h6>
                             <P></P>
-                            <P class="subtitle, title text-danger">Focus in Graphic Web Design </P>
+                            <P class="subtitle, title text-danger" role="heading">Focus in Graphic Web Design </P>
                             <P class="subtitle">College of Lake County Technology Campus</P>
                         </div>
                     </div>
@@ -280,10 +287,10 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="row ">
                         <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl" role="none"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">4,777</h1>
+                            <h2 class="text-danger font-weight-bold font40">4,777</h2>
                             <p class="text-light mb-1">Hours Worked</p>
                         </div>
                     </div>
@@ -291,10 +298,10 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl" role="none"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">350</h1>
+                            <h2 class="text-danger font-weight-bold font40" role="none">350</h2>
                             <p class="text-light mb-1">Projects Finished</p>
                         </div>
                     </div>
@@ -302,10 +309,10 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                            <div class="m-auto"><i class="ti-face-smile icon-xl" role="none"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">96%</h1>
+                            <h2 class="text-danger font-weight-bold font40">96%</h2>
                             <p class="text-light mb-1">Happy Clients</p>
                         </div>
                     </div>
@@ -313,10 +320,10 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="row">
                         <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl" role="none"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">228</h1>
+                            <h2 class="text-danger font-weight-bold font40">228</h2>
                             <p class="text-light mb-1">Coffees Consumed</p>
                         </div>
                     </div>
@@ -401,7 +408,7 @@
 <!--
     <section class="section bg-custom-gray" id="price">
         <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
+            <h2 class="mb-5"><span class="text-danger">Packs</span> Pricing</h2>
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-3">
                     <div class="price-card text-center mb-4">
@@ -482,14 +489,14 @@
     </section>
 -->
     <!-- Portfolio Section -->
-    <section class="section bg-custom-gray" id="portfolio">
+    <section class="section bg-custom-gray" id="portfolio" aria label="My Portfolio Section">
         <div class="container">
-            <h1 class="mb-5">My <span class="text-danger"><span class="text-danger">Portfolio</span></h1>
+            <h2 class="mb-5">My <span class="text-danger"><span class="text-danger">Portfolio</span></h2>
             <div class="portfolio">
                 <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
+                    <!--<a href="#" data-filter=".new" class="active">
                         Recent
-                    </a>
+                    </a>-->
                     <a href="#" data-filter=".web">
                         Web
                     </a>
@@ -583,7 +590,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 photo">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/Knitting_Group.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                            <img src="assets/imgs/Knitting_Group.jpg" class="img-fluid" alt="group of various color knitting needles against a white background">       
                            <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/Knitting_Group.jpg"></a>
                                 <div class="text-holder">
@@ -595,7 +602,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 photo">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/Knitting_purple.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                            <img src="assets/imgs/Knitting_purple.jpg" class="img-fluid" alt="purple knitting needles resting on a white background">       
                            <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/Knitting_purple.jpg"></a>
                                 <div class="text-holder">
@@ -607,7 +614,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 web new"> 
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web/NewCountryLexusofLatham.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <img src="assets/imgs/web/NewCountryLexusofLatham.png" class="img-fluid" alt="screen capture of New Country Lexus of Latham homepage">            
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web/NewCountryLexusofLatham.png"></a>
                                 <div class="text-holder">
@@ -620,7 +627,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 photo">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/Knitting_three.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                            <img src="assets/imgs/Knitting_three.jpg" class="img-fluid" alt="Three knitting needle sets resting on a white background">                        
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/Knitting_three.jpg"></a>
                                 <div class="text-holder">
@@ -632,7 +639,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 photo">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/Knitting_Blue.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                            <img src="assets/imgs/Knitting_Blue.jpg" class="img-fluid" alt="pair of enlarged blue knitting needles">  
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/Knitting_Blue.jpg"></a>
                                 <div class="text-holder">
@@ -644,7 +651,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 photo">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/Knitting_Set.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                            <img src="assets/imgs/Knitting_Set.jpg" class="img-fluid" alt="set of many different Knitting components">   
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/Knitting_Set.jpg"></a>
                                 <div class="text-holder">
@@ -656,7 +663,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web/FirstTeamHonda.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                            <img src="assets/imgs/web/FirstTeamHonda.png" class="img-fluid" alt="Screen capture of First Team Honda homepage">   
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web/FirstTeamHonda.png"></a>
                                 <div class="text-holder">
@@ -668,7 +675,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 web">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web/JacksonKia.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                            <img src="assets/imgs/web/JacksonKia.png" class="img-fluid" alt="Screen capture of Jackson Kia Homepage">                      
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web/JacksonKia.png"></a>
                                 <div class="text-holder">
@@ -681,7 +688,7 @@
                     </div> 
                     <div class="col-md-6 col-lg-4 web">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/web/CaseyVW.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                            <img src="assets/imgs/web/CaseyVW.png" class="img-fluid" alt="Screen capture of Casey Volkswagen Homepage">          
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web/CaseyVW.png"></a>
                                 <div class="text-holder">
@@ -701,7 +708,7 @@
     <!-- End of portfolio section -->
 
 
-    <div class="section contact, section bg-custom-gray" id="contact">
+    <div class="section contact, section bg-custom-gray" id="contact" aria label="Contact Section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -718,20 +725,20 @@
                             <!-- hCaptcha Spam Protection -->
 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <div class="form-group">
-                                <input  class="form-control" type="text" Name="First Name *" placeholder="First Name *" required>
+                                <input  class="form-control" type="text" Name="First Name *" aria-required="true" placeholder="First Name *" aria-label="First Name" required>
                             </div>
                             <div class="form-group">
-                                <input  class="form-control" type="text" Name="Last Name *" placeholder="Last Name *" required>
+                                <input  class="form-control" type="text" Name="Last Name *" aria-required="true" placeholder="Last Name *" aria-label="Last Name" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" name="Email *" placeholder="Email *" required>
+                                <input class="form-control" type="email" name="Email *" aria-required="true" placeholder="Email *" aria-label="Email" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" name="Message *" placeholder="Message *" rows="7" required></textarea>
+                                <textarea class="form-control" name="Message *" aria-required="true" placeholder="Message *" aria-label="Your Message" rows="7" required></textarea>
                             </div> 
                                                        
                             <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                                <button type="submit" class="form-control btn btn-primary" aria-label="Submit button">Send Message</button>
                             </div>
                             <div id="result"></div>
                         </form>
@@ -784,36 +791,37 @@
                     <div class="contact-info-card">
                         <h4 class="contact-title">Get in touch</h4>
                         <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
+                            <div class="col-1 pt-1 mr-1"> 
+                                <i class="ti-mobile icon-md" role="none"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a href="tel:2242302029" target="_blank">+ (224) 230-2029</a></span></h6>
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a href="tel:2242302029" target="_blank" aria label="Call or text me through my cell new tab">+ (224) 230-2029</a></span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
                             <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
+                                <i class="ti-map-alt icon-md" role="none"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">You Can Find Me :<br> <span class="text-muted"><a href="https://maps.app.goo.gl/nnyWbCfY8fVdUDC7A" target="_blank">Elgin, IL</a></span></h6>
+                                <h6 class="d-inline">You Can Find Me :<br> <span class="text-muted"><a href="https://maps.app.goo.gl/nnyWbCfY8fVdUDC7A" target="_blank" aria label="My location on Google new tab">Elgin, IL</a></span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
                             <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
+                                <i class="ti-envelope icon-md" role="none"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted"><a href="mailto:heatherwiemelt@gmail.com" target="_blank">heatherwiemelt@gmail.com</a></span></h6>
+                                <h6 class="d-inline">Email :<br> <span class="text-muted"><a href="mailto:heatherwiemelt@gmail.com" aria label="Contact me through me e-mail new tab" target="_blank">heatherwiemelt@gmail.com</a></span></h6>
                             </div>
                         </div>
 
                         <ul class="social-icons pt-4">
-                                <li class="social-item"><a class="social-link" href="https://www.facebook.com/hwiemelt/" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/heather-wiemelt-1462287b/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link" href="https://www.facebook.com/hwiemelt/" target="_blank"><i class="ti-facebook" aria-label="Follow me on Facebook new tab" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/heather-wiemelt-1462287b/" target="_blank"><i class="ti-linkedin" aria-label="
+                                    follow me on Linkedin new tab" aria-hidden="true"></i></a></li>
                                 <!--<li class="social-item"><a class="social-link" href="https://twitter.com/heatherwiemelt" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a class="social-link" href="https://www.instagram.com/heather_wiemelt/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a class="social-link" href="https://www.youtube.com/channel/UCCnxLcGvfu6tMHL2s9Rk5qQ/about" target="_blank"><i class="ti-youtube" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link" href="https://www.instagram.com/heather_wiemelt/" target="_blank"><i class="ti-instagram" aria label="Follow me on Instagram" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link" href="https://www.youtube.com/channel/UCCnxLcGvfu6tMHL2s9Rk5qQ/about" target="_blank"><i class="ti-youtube" aria label="Follow me on Youtube" aria-hidden="true"></i></a></li>
                             -->
                             </ul> 
                         </ul> 
@@ -823,12 +831,15 @@
 
         </div>
     </div>
+
     <footer class="footer py-3">
+        <section id="footer-content">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> by Heather Wiemelt</span>
             </p>
         </div>
+    </section>
     </footer>
 
 	<!-- core  -->

@@ -7226,7 +7226,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: rgb(242,185,12,0.5) !important;
+  background-color: var(--green) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -11519,6 +11519,31 @@ pre .code {
   font-size: 14px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.visually-hidden:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  text-decoration: underline;
+  clip: auto;
+  white-space: normal;
+}
+
 .footer {
   background: var(--green);
   text-align: center;
@@ -11528,8 +11553,8 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 200px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.webp);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
