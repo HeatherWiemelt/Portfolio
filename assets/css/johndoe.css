@@ -631,8 +631,8 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .col {
@@ -7226,7 +7226,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: var(--green) !important;
+  background-color: rgb(242,185,12,0.5) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10839,8 +10839,8 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
-  color: var(--white) !important;
   font-weight: 700;
+  color: white;
 }
 
 a.text-light:hover, a.text-light:focus {
@@ -11441,7 +11441,7 @@ pre .code {
 .navbar .brand .brand-img {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -11521,12 +11521,13 @@ pre .code {
 
 .footer {
   background: var(--green);
+  text-align: center;
 }
 
 .header {
   position: relative;
   height: 80vh;
-  min-height: 600px;
+  min-height: 200px;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
   background-size: cover;
@@ -11538,14 +11539,14 @@ pre .code {
 
 .header .container {
   position: relative;
-  height: 100%;
+  height: 120%;
 }
 
 .header .header-content {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 55%;
+  top: 44%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
