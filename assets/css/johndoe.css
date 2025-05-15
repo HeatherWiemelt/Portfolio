@@ -604,7 +604,7 @@ pre code {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -1190,7 +1190,7 @@ pre code {
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 100%;
   }
   .col-md-7 {
     -webkit-box-flex: 0;
@@ -1407,7 +1407,7 @@ pre code {
     -webkit-flex: 0 0 33.33333%;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    /* max-width: 33.33333%;*/
   }
   .col-lg-5 {
     -webkit-box-flex: 0;
