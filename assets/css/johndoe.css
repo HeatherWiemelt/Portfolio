@@ -11446,7 +11446,7 @@ pre .code {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -weblit-transform: translate(-50%, -50%);
-  border: 5px solid rgba(242, 185, 12, 0.8);
+  border: 3px solid rgb(0, 0, 0);
   -webkit-transition: .5s !important;
   transition: .5s !important;
   -weblit-transition: .5s !important;
